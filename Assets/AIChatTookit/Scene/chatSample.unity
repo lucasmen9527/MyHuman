@@ -795,6 +795,7 @@ Transform:
   - {fileID: 1252418950}
   - {fileID: 618607717}
   - {fileID: 622539268}
+  - {fileID: 1131376793}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &196786951 stripped
@@ -3897,6 +3898,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1131376792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131376793}
+  - component: {fileID: 1131376794}
+  m_Layer: 0
+  m_Name: siliconFlow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131376793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131376792}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 178558178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1131376794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131376792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a13c96792ef1f34c838dbd35965b70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://api.siliconflow.cn/v1/chat/completions
+  m_Prompt: "\u4F60\u7684\u89D2\u8272\u662F\u6D4E\u5357\u5E02\u5386\u4E0B\u533A\u6D88\u9632\u652F\u961F\u7684\u4E00\u540D\u667A\u80FD\u52A9\u624B\uFF0C\u8BF7\u6839\u636E\u4F60\u7684\u89D2\u8272\u8FDB\u884C\u5BF9\u8BDD"
+  lan: "\u4E2D\u6587"
+  m_HistoryKeepCount: 15
+  m_DataList: []
+  api_key: sk-iyznzgbdjdjxfoppqbdzncttreheviwwoptcxaigoaanmgmq
+  m_SystemSetting: 
+  m_ModelName: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
 --- !u!1 &1167846584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4472,8 +4525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 749.5, y: -22.5}
-  m_SizeDelta: {x: 1479, y: 0}
+  m_AnchoredPosition: {x: 682, y: -22.5}
+  m_SizeDelta: {x: 1344, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423120622
 MonoBehaviour:
@@ -4637,7 +4690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ChatSettings:
-    m_ChatModel: {fileID: 622539269}
+    m_ChatModel: {fileID: 1131376794}
     m_TextToSpeech: {fileID: 2023088799}
     m_SpeechToText: {fileID: 2023088798}
   m_ChatPanel: {fileID: 952192933}
