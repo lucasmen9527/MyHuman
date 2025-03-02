@@ -9,7 +9,7 @@ public class AzureSpeechToText : STT
 {
 
     /// <summary>
-    /// Azure������
+    /// Azure???
     /// </summary>
     [SerializeField] private AzureSettings m_AzureSettings;
     public string mode = "conversation";
@@ -22,7 +22,7 @@ public class AzureSpeechToText : STT
         GetUrl();
     }
     /// <summary>
-    /// ƴurl
+    /// ?url
     /// </summary>
     private void GetUrl()
     {
@@ -35,7 +35,7 @@ public class AzureSpeechToText : STT
             m_AzureSettings.language;
     }
     /// <summary>
-    /// ����ʶ��
+    /// ????
     /// </summary>
     /// <param name="_clip"></param>
     /// <param name="_callback"></param>
@@ -46,7 +46,7 @@ public class AzureSpeechToText : STT
     }
 
     /// <summary>
-    /// ����ʶ��
+    /// ????
     /// </summary>
     /// <param name="_audioData"></param>
     /// <param name="_callback"></param>
@@ -57,7 +57,7 @@ public class AzureSpeechToText : STT
 
 
     /// <summary>
-    /// ʶ������
+    /// ????
     /// </summary>
     /// <param name="audioData"></param>
     /// <param name="_callback"></param>
@@ -94,7 +94,7 @@ public class AzureSpeechToText : STT
         _callback(recognizedText);
 
         stopwatch.Stop();
-        Debug.Log("Azure����ʶ���ʱ��" + stopwatch.Elapsed.TotalSeconds);
+        Debug.Log("Azure??????:" + stopwatch.Elapsed.TotalSeconds);
     }
 }
 
