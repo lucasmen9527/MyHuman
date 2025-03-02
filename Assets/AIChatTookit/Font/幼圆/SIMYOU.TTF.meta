@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 02b096461799f0848859d884b2d9f0d1
+timeCreated: 1603330791
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: YouYuan
+  fontNames:
+  - YouYuan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
